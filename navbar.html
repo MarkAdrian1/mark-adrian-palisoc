@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/20f26b8678.js" crossorigin="anonymous"></script>
+    <!--Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Navbar & sidenav</title>
+    <link rel="stylesheet" href="sidenav.css">
+</head>
+<body>
+    <nav class="deep-purple darken-2">
+        <div class="container">    
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo center">Mark Adrian Palisoc</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="Day4.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="https://www.facebook.com/adrianpalisoc08">facebook</a>
+                    </li>
+                    <li class="active">
+                        <a href="Day3.html" target="_blank">Slider</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown-menu" class="dropdown-content deep-purple">
+        <li>
+            <a href="https://materializecss.com/sidenav.html" class="white-text">A</a>
+        </li>
+        <li>
+            <a href="" class="white-text">B</a>
+        </li>
+        <li>
+            <a href="" class="white-text">C</a>
+        </li>
+    </ul>
+
+    <!-- Sidenav -->
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+    <div class="background grey">
+        <h3 class="white-text">This is a Sidenav</h3>
+    </div>
+    <br><br><br>
+    <a href="#user"><img class="circle" src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/350359076_975256663669281_8743300512252496355_n.jpg?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFFtZBZiHbsgYNRlOxEGAU7ZcoGkAej11JlygaQB6PXUjABJBkTzspRR9jxtEAitS4wzATVoOdfAP2r8ToUCdgH&_nc_ohc=w6VLBkgYWTcAX-bNqtT&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfBD0b2vEDw9hQT5AJgAQSbIoYTYdBdf0IqhTn1snF7LPA&oe=649B9316"></a>
+    <a href="#name"><span class="white-text name">Mark Adrian Palisoc</span></a>
+    <a href="#email"><span class="white-text email">random</span></a>                </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+</ul>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-trigger').dropdown();
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
