@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/20f26b8678.js" crossorigin="anonymous"></script>
+    <!--Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="image1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="header">
+                <h2>Parallax</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae ad nobis impedit dolore eius unde tenetur veritatis eaque. Necessitatibus quisquam deleniti enim harum quibusdam sunt molestias ipsam repudiandae adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non officiis sed et. Dolore iste mollitia ipsum? Sapiente eius facere aspernatur, voluptate dolorem repudiandae voluptatem, recusandae ullam veniam quas similique temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque vitae cumque sint, possimus, eius similique, ab pariatur dolorem id dicta neque cum blanditiis dolore placeat ratione inventore! Aliquam, officia! lorem1500</p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="image3.jpg" alt="">
+        </div>
+    </div>
+
+    <!--Modal-->
+    <a href="" class="waves-effect waves-light btn blue modal-trigger" data-target="mymodal">Modal</a>
+
+    <div class="modal modal-fixed-footer" id="mymodal">
+        <div class="modal-content">
+            <h3>Modal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio quidem distinctio cum, hic laboriosam quod, ratione ipsum eius quo earum saepe perferendis consequuntur alias labore dolorem exercitationem, fugiat assumenda.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn modal-close teal">AGREE</a>
+            <a href="#" class="btn modal-close teal">DISAGREE</a>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>       
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--modal-->
+    <script>
+document.addEventListener('DOMContentLoaded',function(){
+        var mod=document.querySelectorAll('.modal'); 
+        M.Modal.init(mod,{
+            opacity:0.9
+        })
+            
+        })
+    </script>
+    
+    <!--parallax-->
+    <script>
+document.addEventListener('DOMContentLoaded',function(){
+            var para = document.querySelectorAll('.parallax');
+            M.Parallax.init(para);
+        })
+    </script>
+</body>
+</html>
