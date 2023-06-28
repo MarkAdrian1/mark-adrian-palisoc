@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1{
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 3px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 0.70em;
+  outline: none;
+  animation:  animates 5s linear infinite;
+}
+@keyframes animates
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #0e3742;
+    text-shadow: none;
+  }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4
+    ;
+
+  }
+}
+
+
+
+/*h2*/
+h2{
+  position: relative;
+  font-size: 5vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #030303;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fe9901;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #fe1f01;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  text-align: center;
+}
+@keyframes animate{
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+
+
+
+
+img {
+  width: 100%;
+}
+
+
+body {
+  background-image: url("logo.jpg");
+}
+
+.logo {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.nav-links {
+  margin-bottom: 50px;
+}
+
+.page-title {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.get-started,
+.subscribe {
+  margin-top: 50px;
+}
+
+/* Shop */
+
+.shop {
+  background-color: #333333;
+  width: 100%;
+}
+
+.shop .shop-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-header h3 {
+  color: orange;
+  padding: 10px 30px;
+}
+
+.shop-header h4 {
+  color: orange;
+  padding: 10px 20px;
+}
+
+.shop-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #404040;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.shop-box .card {
+  width: 280px;
+  margin: 50px;
+}
+
+.shop-box .card-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.shop-box .card-image img:hover {
+  transform: scale(1.1);
+  transition: transform .4s ease-in-out;
+}
+
+.shop-box .card-body {
+  padding: 20px;
+  color: white;
+  border: 3px solid #3B3B3B;
+}
+
+.shop-box .card-body h3 {
+  padding: 10px 0;
+}
+
+.shop-box .card-body i {
+  color: yellow;
+  font-size: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+.shop-box .card-body .cash {
+  font-size: 22px;
+  margin-left: 90px;
+}
+
+/* button */
+.btn{
+  border: 1px solid #0a0233;
+  background: none;
+  padding: 1px 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1{
+  color: #111010;
+}
+.btn1 :hover{
+  color: #ffffff;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #27292b;
+  z-index: -1;
+  transition: 0,8s;
+}
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before{
+  height: 100%;
+}
+
+/*navbar design*/
+.brand-logo{
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  scroll-margin-right: 35px;
+}
+.navbar a:hover{
+  color: #f00;
+}
+
+.navnav{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 5px;
+  background: rgba(148, 137, 137, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255,255,255, .2);
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 2px solid #333333;
+}
+
+.contact .contact-box {
+  flex: 1;
+}
+
+.contact .contact-box .contact-image,
+.contact .contact-box .contact-body {
+  height: 100%;
+}
+
+.contact img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-image img {
+  opacity: .9;
+}
+
+.contact-body {
+  background-color: #404040;
+  height: 100%;
+  border-left: 2px solid #333333;
+}
+
+.contact-body form {
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+.contact-body h2 {
+  color: orange;
+}
+
+form .form-content {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid lightgray;
+}
+
+form .form-content input {
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  font-size: 17px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+
+form .form-content label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: gray;
+  transform: translateY(-50%);
+  font-size: 17px;
+  transition: .5s;
+  pointer-events: none;
+}
+
+form .form-content span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: orange;
+  transform: .4s;
+}
+
+form .form-content input:focus~label,
+form .form-content input:valid~label {
+  top: -5px;
+  color: orange;
+}
+
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before {
+  width: 100%;
+}
+
+.contact-body form button {
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  background-color: #ff6600;
+  color: white;
+  border: 5px;
+  cursor: pointer;
+  transition: all .4s ease-in;
+}
+
+.contact-body form button:hover {
+  background-color: #ff6681;
+}
+
+/* Footer */
+
+
+.footer {
+  background-color: #404040;
+  border-top: 2px solid #333333;
+}
+
+.footer .footer-box {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+  color: white;
+  background-color: #333333;
+  border-radius: 50%;
+  font-size: 17px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+  opacity: .7;
+  transition: .5s all ease-in-out;
+}
+
+.footer .footer-box .copyright {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-box .brand {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+  color: orange;
+}
+
